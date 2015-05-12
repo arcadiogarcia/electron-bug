@@ -1,5 +1,6 @@
-var child_process = require('child_process');
-child = child_process.fork(__dirname + '/child.js');
-child.on('message', function(message) {
-  console.log(message)
-})
+var electronpath = require('electron-prebuilt');
+var path = require('path');
+var spawn = require('child_process').spawn;
+var cwd = path.resolve(__dirname, 'spawned');
+console.log('cwd = ' + electronpath);
+var child = spawn(electronpath, ['.'], {cwd: cwd});
