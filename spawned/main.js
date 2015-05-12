@@ -21,7 +21,7 @@ app.on('ready', function() {
     mainWindow = new BrowserWindow({width: 1224, height: 768});
 
     // and load the index.html of the app.
-    mainWindow.loadUrl('file://' + __dirname + '/index.html');
+    mainWindow.loadUrl('file://' + '/Users/jonathan/github/bt-lunar/build/' + '/index.html');
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function() {
