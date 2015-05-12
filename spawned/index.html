@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World!</title>
+    <script>
+    	window.onload = function() {
+    		var text = document.getElementById("text");
+	    	var i = 0;
+	        setInterval(function() {
+	        	console.log("Hello World");
+	        	text.innerHTML = "Called console.log() " + (i++) + " times"
+	        },10);
+    	}
+    	
+    </script>
+</head>
+<body>
+	<p id="text">Hello World</p>
+</body>
+</html>

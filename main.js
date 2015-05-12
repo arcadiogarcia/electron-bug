@@ -14,6 +14,8 @@ app.on('window-all-closed', function() {
         app.quit();
 });
 
+console.log(process.argv);
+
 // This method will be called when atom-shell has done everything
 // initialization and ready for creating browser windows.
 app.on('ready', function() {
